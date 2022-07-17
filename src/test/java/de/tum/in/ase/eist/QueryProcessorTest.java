@@ -34,7 +34,7 @@ class QueryProcessorTest {
 	void isNotExisted() {
 		String actual = queryProcessor.process("Greger");
 		if (!actual.contains("try")) {
-			fail("This case is handled");
+			fail("This case is not explict handled");
 		}
 	}
 
