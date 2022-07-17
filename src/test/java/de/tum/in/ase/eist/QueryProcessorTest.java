@@ -30,4 +30,12 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void isNotExisted() {
+		String actual = queryProcessor.process("Greger");
+		if (!actual.contains("try")) {
+			fail("This case is handled");
+		}
+	}
+
 }
